@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div class="container" id="myrow">
+    <div class="row">
+        <p>This image classification model was created using 2,057 images belonging in one of the following classes:</p>
+        <p>['Bear', 'Cat', 'Chicken', 'Cow', 'Deer', 'Dog', 'Duck', 'Eagle',
+            'Elephant', 'Human', 'Lion', 'Monkey', 'Mouse', 'Natural', 'Panda',
+            'Pigeon', 'Rabbit', 'Sheep', 'Tiger', 'Wolf']</p>
+        <p>Each image's features were extracted using <a href="https://www.analyticsvidhya.com/blog/2019/09/feature-engineering-images-introduction-hog-feature-descriptor/" target="_blank">Histogram of Oriented Gradients (HOG)</a>, which is a feature descriptor often used with image data.
+            The complete image is broken down into smaller regions and for each region, the gradients and orientation are calculated.
+            It focuses on the structure or shape of each portion of an image and extracts the edge features and their direction.
+            It then generates a histogram for each one of these regions using the gradients and orientations of the pixel values.
+
+        </p>
+        <div class="col col-4">
+            <img src="static/images/hog_transformation.png" alt="Image" width=800>
+
+        </div>
+        <p>
+            The classification model is a Stochastic Gradient Descent Classifier that was hyperparameterized using GridSearchCV.
+        </p>
+        
+    </div>
+
+</div>
+<style>
+    #myrow{
+        background-color:#EBEDEF;
+    }
+    p{
+        font-size: 18px;
+     }
+</style>
+
+{% endblock %}
+

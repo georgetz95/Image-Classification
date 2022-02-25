@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Classification Flask App</title>
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <script src="static/js/bootstrap.js"></script>
+        <script src="static/js/bundle.js"></script>
+        <script src="static/js/jquery.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2C3E50">
+            <a class="navbar-brand" href="/">Image Classification App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container">
+              <br>
+              <br>
+            <h1>Image Classification Flask App Using Machine Learning</h1>
+
+          </div>
+
+          {% block body %}
+          
+          {% endblock %}
+
+        <!-- Footer -->
+        <div class="container">
+            <footer>
+                Developed by <a href="https://github.com/georgetz95">Giorgos Tzimas</a>
+            </footer>
+        </div>
+    </body>
+        
+
+</html>
