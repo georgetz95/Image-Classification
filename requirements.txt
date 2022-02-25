@@ -4,6 +4,4 @@ scipy
 flask
 scikit-image
 scikit-learn
-pickle
-os
 gunicorn
